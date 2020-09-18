@@ -1,2 +1,2 @@
 javac bart.java
-java Test
+java Bart

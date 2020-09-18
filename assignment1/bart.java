@@ -11,7 +11,7 @@
 +========================================+
 */
 
-class Test {
+class Bart {
   public static void main(String[] args)  {
     System.out.print(
     "  |\\/\\/\\/|\n"+
