@@ -1,7 +1,8 @@
 @ECHO OFF
-REM INPUT FOR
 SET /P ID="what assignment to zip: "
 jar -cfM Sun_Paul_Assignment%ID%.zip ../assignment%ID%
+
+REM CHECK IF FILE EXISTS
 IF EXIST Sun_Paul_Assignment%ID%.zip GOTO fileExists 
 GOTO oops
 :fileExists
@@ -10,4 +11,6 @@ GOTO end
 :oops
 ECHO something went wrong oops lol
 :end
+
+REM STOPS WINDOW FROM IMMEDIATELY CLOSING
 pause
