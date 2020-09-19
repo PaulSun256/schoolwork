@@ -13,6 +13,8 @@
 
 class Bart {
   public static void main(String[] args)  {
+    
+    // prints out ascii of Bart from The Simpsons
     System.out.print(
     "  |\\/\\/\\/|\n"+
     "  |      |\n"+
@@ -23,6 +25,8 @@ class Bart {
     "  |   /\n"+
     " /____\\\n"+
     "/      \\\n\n");
+
+    // ascii art for my name, Paul Sun
     System.out.print(
     " _____            _    _____\n"+
     "|  __ \\          | |  / ____|\n"+
