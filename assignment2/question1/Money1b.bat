@@ -1,2 +1,2 @@
-javac Money1b.java
+javac money1b.java
 java Money

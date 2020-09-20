@@ -1,4 +1,4 @@
-javac Money1b.java
+javac money1b.java
 java Money
 
 # keeps window open till a key is pressed

@@ -1,4 +1,4 @@
-javac Decimal2.java
+javac decimal2.java
 java Equations
 
 # keeps window open till a key is pressed

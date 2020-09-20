@@ -1,4 +1,4 @@
-javac Time.java
+javac time.java
 java Clock
 
 # keeps window open till a key is pressed

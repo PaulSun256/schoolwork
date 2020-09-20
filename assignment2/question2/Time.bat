@@ -1,2 +1,2 @@
-javac Time.java
+javac time.java
 java Clock

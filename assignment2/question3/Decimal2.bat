@@ -1,2 +1,2 @@
-javac Decimal2.java
+javac decimal2.java
 java Equations
