@@ -12,7 +12,7 @@
 +========================================+
 */
 
-class Equations	{
+class Equations {
     public static void main(String[] args) {
 
         // calculate the result of the equations, and rounds them to the nearest 100th

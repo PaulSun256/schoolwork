@@ -11,7 +11,7 @@
 +========================================+
 */
 
-class Bart {
+class Bart  {
   public static void main(String[] args)  {
     
     // prints out ascii of Bart from The Simpsons
