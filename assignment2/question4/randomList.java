@@ -16,11 +16,14 @@
 
 class RandomList	{
     public static void main(String[] args) {
+
+        // using randInt with different mins and max to simulate a set / array of integers drawn at random
         System.out.println(randInt(1, 30));
         System.out.println(randInt(-4, 2));
         System.out.println(randInt(1, 6) * 10);
     }
 
+    // inclusive random integer generator
     public static int randInt(int min, int max) {
         int randomInt = (int)(Math.random()*((max + 1) - min) + min);
         return randomInt;
