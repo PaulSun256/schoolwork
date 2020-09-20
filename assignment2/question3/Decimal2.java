@@ -13,9 +13,9 @@
 */
 
 class Equations	{
-    public static void main(String[], args) {
-        float equation1 = (int)((1 / 4.0 + 10 - 3 / 5.0) * 100 + 0.5) / 100;
-        float equation2 = (int)((Math.pow((27.3 + 0.3), 3) - (3 + 15.3) / (1.22 / 2)) / Math.sqrt(6) * 100 + 0.5) / 100;
+    public static void main(String[] args) {
+        float equation1 = (float)(Math.round((1 / 4.0 + 10 - 3 / 5.0) * 100.0) / 100.0);
+        float equation2 = (float)(Math.round((Math.pow((27.3 + 0.3), 3) - (3 + 15.3) / (1.22 / 2)) / Math.sqrt(6) * 100.0) / 100.0);
         System.out.println(equation1);
         System.out.println(equation2);
     }
