@@ -20,7 +20,7 @@ class Equations {
         float equation2 = (float)((Math.pow((27.3 + 0.3), 3) - (3 + 15.3) / (1.22 / 2)) / Math.sqrt(6));
 
         // outputs our answer
-        System.out.printf("%4.2f %n", equation1);
-        System.out.printf("%4.2f %n", equation2);
+        System.out.printf("%4.2f \n", equation1);
+        System.out.printf("%4.2f \n", equation2);
     }
 }
