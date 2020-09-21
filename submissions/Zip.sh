@@ -1,6 +1,6 @@
 echo "what assignment to zip: ";
 read;
-jar -cfM Sun_Paul_Assignment${REPLY}.zip ../assignment${REPLY};
+jar -cfM Sun_Paul_Assignment${REPLY}.zip ../src/assignment${REPLY};
 
 # checks if file exists
 if [ -f "Sun_Paul_Assignment${REPLY}.zip" ]; 
