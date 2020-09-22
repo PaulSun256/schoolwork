@@ -12,9 +12,6 @@
 +========================================+
 */
 
-// follow me on github because i want followers
-// https://github.com/PaulSun256/
-
 class Clock {
     public static void main(String[] args)  {
 
@@ -28,9 +25,15 @@ class Clock {
                                          // this is to avoid excess calculations, because minutes depends on seconds / 60, and so do hours
         int minutes = hours % 60;        // taking the hours (still minutes) and getting it's remainder of dividing by 60 (ie, 63 mins becomes 3)
         hours = hours / 60;              // finally, we can get the real hours, by dividing. Java saves us some work by throwing away decimal in int / int division
+
+        // here is how to do it without formatting
+        // 
+        // seconds = seconds / 10 + seconds % 10;
+        // minutes = minutes / 10 + minutes % 10;
+        // hours = hours / 10 + hours % 10;
         
         // outputs our answer. We formatted it so that it will "pad" some 0s on the left to make all numbers 2 digits long, ie 1:1:11 > 01:01:11
-        System.out.println(String.format("%02d", hours) + ":" + String.format("%02d", minutes) + ":" + String.format("%02d", seconds));
+        System.out.printf("%d:%02d:%02d", hours, minutes, seconds);
 
     }
 
