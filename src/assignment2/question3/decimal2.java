@@ -12,9 +12,6 @@
 +========================================+
 */
 
-// follow me on github because i want followers
-// https://github.com/PaulSun256/
-
 class Equations {
     public static void main(String[] args) {
 
