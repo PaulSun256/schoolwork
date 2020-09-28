@@ -1,6 +1,6 @@
 @ECHO OFF
 SET /P ID="what assignment to zip: "
-jar -cfM Sun_Paul_Assignment%ID%.zip ../src/assignment%ID%
+jar -cfM Sun_Paul_Assignment%ID%.zip ../Sun_Paul/src/assignment%ID%
 
 REM CHECK IF FILE EXISTS
 IF EXIST Sun_Paul_Assignment%ID%.zip GOTO fileExists 
