@@ -16,15 +16,24 @@ import java.util.Scanner;
 
 class Guess	{
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int guessThis = randInt(1, 20), playerGuess, timesGuessed = 0;
+
+        // declaring variables and initializing because I can
+        int guessThis = randInt(1, 20), playerGuess, timesGuessed = 1;
+
+        // prompt for initial guess to initialize while loop as well.
         System.out.println("Guess a number between 1 and 20 (inclusive): ");
         playerGuess = getInt();
+
+        // let the player keep guessing until they get it right
         while(guessThis != playerGuess) {
             System.out.println("Wrong! Try again: ");
             playerGuess = getInt();
+
+            // increases their guess count by 1
             timesGuessed++;
         }
+
+        // they did it!
         System.out.printf("You did it! The number was %d, and it took you %d tries.", guessThis, timesGuessed);
         input.close();
     }
