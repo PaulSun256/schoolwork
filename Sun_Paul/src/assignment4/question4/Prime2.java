@@ -52,7 +52,7 @@ class Prime2	{
     // determines if a number is prime
     public static boolean isPrime(int userInt) {
         
-        if(userInt == 4 || userInt == 0 || userInt == 1) return 0;
+        if(userInt == 4 || userInt == 0 || userInt == 1) return false;
 
         if(userInt > 3) for(int i = 2; i < userInt / 2; ++i)	{
             if(userInt % i == 0)	{
