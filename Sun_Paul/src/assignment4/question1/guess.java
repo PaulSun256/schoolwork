@@ -50,7 +50,11 @@ class Guess	{
         Scanner scan = new Scanner(System.in);
 
         while(true){
+
+            // get input
             String input = scan.nextLine();
+
+            // tries to turn it into an int, and if it can't it tries again.
             try {
                 int n = Integer.parseInt(input);
                 return n;
