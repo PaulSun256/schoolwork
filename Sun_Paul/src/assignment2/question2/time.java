@@ -28,9 +28,10 @@ class Clock {
 
         // here is how to do it without formatting
         // 
-        // seconds = seconds / 10 + seconds % 10;
-        // minutes = minutes / 10 + minutes % 10;
-        // hours = hours / 10 + hours % 10;
+        // String secondsString, minutesString, hoursString;
+        // secondsString = seconds / 10 + seconds % 10;
+        // minutesString = minutes / 10 + minutes % 10;
+        // hoursString = hours / 10 + hours % 10;
         
         // outputs our answer. We formatted it so that it will "pad" some 0s on the left to make all numbers 2 digits long, ie 1:1:11 > 01:01:11
         System.out.printf("%d:%02d:%02d", hours, minutes, seconds);
