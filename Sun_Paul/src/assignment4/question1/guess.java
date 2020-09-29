@@ -26,7 +26,7 @@ class Guess	{
 
         // let the player keep guessing until they get it right
         while(guessThis != playerGuess) {
-            System.out.println("Wrong! Try again: ");
+            System.out.printf("Wrong! You guessed %s. Try again: ", (playerGuess > guessThis) ?  "high" : "low" );
             playerGuess = getInt();
 
             // increases their guess count by 1
@@ -35,7 +35,6 @@ class Guess	{
 
         // they did it!
         System.out.printf("You did it! The number was %d, and it took you %d tries.", guessThis, timesGuessed);
-        input.close();
     }
 
     // inclusive random integer generator
