@@ -26,6 +26,7 @@ class Guess	{
 
         // let the player keep guessing until they get it right
         while(guessThis != playerGuess) {
+            // ternary to save some lines. Tells you if you guessed low or high
             System.out.printf("Wrong! You guessed %s. Try again: ", (playerGuess > guessThis) ?  "high" : "low" );
             playerGuess = getInt();
 
