@@ -52,8 +52,10 @@ class Prime2	{
     // determines if a number is prime
     public static boolean isPrime(int userInt) {
         
+        // if any of the numbers are 4, 0, or 1, it tells that it's not prime. This is because my code to see if they are prime doesn't actually use the proper method
         if(userInt == 4 || userInt == 0 || userInt == 1) return false;
 
+        // check if the number can divide evenly into any of the numbers between 2 and half of itself. ++i because it increments i and then passes it to the function, rather than passing i then incrementing it
         if(userInt > 3) for(int i = 2; i < userInt / 2; ++i)	{
             if(userInt % i == 0)	{
                 return false;
