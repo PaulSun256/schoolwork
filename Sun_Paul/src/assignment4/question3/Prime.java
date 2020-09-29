@@ -24,6 +24,7 @@ class Prime	{
 
         // anything less than or equal to 3 is prime, so don't even bother running them through this loop, things might malfunction
         // if it is bigger, then chech whether it can divide neatly into any number between itself / 2 and 2
+        
         if(userInt > 3) for(int i = 2; i < userInt / 2; ++i)	{
             if(userInt % i == 0)	{
                 isNotPrime = true;
@@ -32,7 +33,7 @@ class Prime	{
         }
         
         // of course, 1 isn't a prime, so we change that here
-        if(userInt == 1)	isNotPrime = true;
+        if(userInt == 4 || userInt == 0 || userInt == 1) isNotPrime = true;
 
         // tells the user whether or not it is prime
         System.out.println((!isNotPrime ? "Yes, it's prime." : "No, it's not prime."));
