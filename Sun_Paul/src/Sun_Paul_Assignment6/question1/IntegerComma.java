@@ -25,9 +25,9 @@ class IntegerComma	{
         System.out.println("Please enter some integers, but you need to separate them with a comma");
         String temp = input.nextLine();
         
-        int numbers[] = toArray(temp);
-        int numSorted[] = numbers.clone();  // we don't sort this, because the min() method will sort it for us
-                                            //This means we also don't need a couldBeArithmetic method either, because we can just use the array sorted by min()
+        int numbers[], numSorted[] = toArray(temp); 
+        // the reason we don't actually sort numSorted here, is because min() sorts it for us, which means having 2 copies works fine.
+        // this also lets use reuse the isArithmetic method.
 
         // outputs the results of the calculations
         System.out.println("Minimum value is " + min(numSorted));
@@ -80,8 +80,9 @@ class IntegerComma	{
     }
 
     // Functions can modify arrays values, so we can clone an array, pass it through min() which sorts it for us! 
-    // This means that we don't need another method, and can save some typing
+    // This means that we don't need another method, and can save some typing by just having 2 copies of the array instead of 2 methods
     public static boolean isArithmetic(int arr[])	{
+        //Arrays.sort(arr);
         int diff = arr[1] - arr[0];
         for(int i = 0; i < arr.length - 1; i++)	{
             if(diff != arr[i + 1] - arr[i])	return false;
