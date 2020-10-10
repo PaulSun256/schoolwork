@@ -25,7 +25,7 @@ class IntegerComma	{
         System.out.println("Please enter some integers, but you need to separate them with a comma");
         String temp = input.nextLine();
         
-        int numbers[], numSorted[] = toArray(temp); 
+        int numbers[] = toArray(temp), numSorted[] = toArray(temp); 
         // the reason we don't actually sort numSorted here, is because min() sorts it for us, which means having 2 copies works fine.
         // this also lets use reuse the isArithmetic method.
 
@@ -41,26 +41,29 @@ class IntegerComma	{
     // converts the string into an array, bc it's pretty bulky code to do so
     public static int[] toArray(String str)	{
         str = str.replace(" ", "");
-        int length = 1;                        // for loops stop one before the last character so we start at 1 not 0
+        int length = 1;                                                                     // for loops stop one before the last character so we start at 1 not 0
 
         for(int i = 0; i < str.length(); i++)	if(str.charAt(i) == ',')    length++;
-
+        
+        // create arrays
         int intArray[] = new int[length];
-        String strArray[] = new String[length];
+        String strArray[] = str.split(",", 0);
 
-        strArray = str.split(",", 0);
-
+        // fill integer array by parsing the elements in the string array
         for(int i = 0; i < length; i++)	intArray[i] = Integer.parseInt(strArray[i]);
 
         return intArray;
     }
 
-    // finds sum
+    // finds sum of all elements
     public static int sum(int arr[])	{
         int total = 0;
+
+        // adds up all of the elements
         for(int i = 0; i < arr.length; i++)	{
             total += arr[i];
         }
+
         return total;
     }
 
@@ -82,6 +85,8 @@ class IntegerComma	{
     // Functions can modify arrays values, so we can clone an array, pass it through min() which sorts it for us! 
     // This means that we don't need another method, and can save some typing by just having 2 copies of the array instead of 2 methods
     public static boolean isArithmetic(int arr[])	{
+
+        // uncomment the line below to get the couldBeArithmetic() method.
         //Arrays.sort(arr);
         int diff = arr[1] - arr[0];
         for(int i = 0; i < arr.length - 1; i++)	{

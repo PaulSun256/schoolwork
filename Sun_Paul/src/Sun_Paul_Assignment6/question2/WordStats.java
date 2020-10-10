@@ -23,6 +23,7 @@ class WordStats	{
         wordStats(str);
     }
 
+    // prints out information about the series of words
     public static void wordStats(String str)	{
         int wordCount = 1;
         for(int i = 0; i < str.length(); i++)	if(str.charAt(i) == ' ') wordCount++; // find wordcount from number of spaces after trimming (in main)
